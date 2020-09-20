@@ -1,0 +1,48 @@
+#particles-js {
+    width: 100%;
+    height: 650px;
+    background-color: #000000;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.partial {
+    height: 400px !important;
+}
+
+.section-particle {
+    padding-top: 50px;
+}
+
+.hero {
+    position: absolute;
+    top: 35%;
+    width: 100%;
+}
+.hero h1 {
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+.hero span {
+    color: white;
+    margin-top: 10px;
+    font-size: 18px;
+}
+.hero a:hover {
+    color: white;
+}
+@media (max-width: 500px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+}
+.hero-partial {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+}
