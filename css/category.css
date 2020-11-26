@@ -1,25 +1,9 @@
-.card-category {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	transition: 0.3s;
-	background-color: rgb(1, 1, 126);
-	margin-bottom: 20px !important
-}
-.card-category:hover {
-	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2)
-}
-.con {
-	padding-top: 20px;
-	padding-bottom: 20px;
+.card-ctgr {
+	background-color: white;
+	border-radius: 3px;
+	color: black;
+	border: 1px solid #E0E0E0;
+	padding: 10px;
 	text-align: center;
-	color: white
-}
-.con h2 {
-	font-size: 25px;
-}
-.card-category a:hover {
-	color: white
-}
-.card-category a {
-	text-decoration: none !important;
-	color: white
+	margin-top: 20px;
 }
