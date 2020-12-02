@@ -31,7 +31,9 @@ pre[class*="language-"]>code {
 	background-size: 3em 3em;
 	background-origin: content-box;
     background-attachment: local;
-    border-radius: 3px;
+	border-radius: 3px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 code[class*="language-"] {
 	max-height: inherit;
