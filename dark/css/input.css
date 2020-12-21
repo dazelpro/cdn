@@ -1,0 +1,41 @@
+.input-form {
+    background: #011c26;
+    color: white;
+    border: 0;
+    padding: 1.5rem 1.5rem;
+    box-shadow: none!important;
+    font-size: 16px;
+    width: 100%;
+    border-radius: .25rem;
+}
+.input-form:focus {
+    background: #025e73;
+}
+.input-form-search {
+    background: #011c26;
+    color: white;
+    border: 0;
+    padding: 1.5rem 3.5rem 1.5rem 1.5rem;
+    box-shadow: none!important;
+    font-size: 16px;
+    width: 100%;
+    border-radius: .25rem;
+}
+input, button {
+    font-family: 'Quicksand', sans-serif;
+}
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+::placeholder {
+    color: white;
+    opacity: 1; /* Firefox */
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: white;
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: white;
+}

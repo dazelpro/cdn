@@ -1,0 +1,78 @@
+/* Font Size */
+.fs8 {
+    font-size: 8px;
+}
+.fs10 {
+    font-size: 10px;
+}
+.fs12 {
+    font-size: 12px;
+}
+.fs14 {
+    font-size: 14px;
+}
+.fs16 {
+    font-size: 16px;
+}
+.fs18 {
+    font-size: 18px;
+}
+/* Font Weight */
+.fw300 {
+    font-weight: 300;
+}
+.fw400 {
+    font-weight: 400;
+}
+.fw500 {
+    font-weight: 500;
+}
+.fw600 {
+    font-weight: 600;
+}
+/* Font Align */
+.ta-center {
+    text-align: center;
+}
+.ta-left {
+    text-align: left;
+}
+.ta-right {
+    text-align: right;
+}
+/* Padding */
+.pt30 {
+    padding-top: 30px;
+}
+.pt50 {
+    padding-top: 50px;
+}
+.pt100 {
+    padding-top: 100px;
+}
+.pt150 {
+    padding-top: 150px;
+}
+.pt200 {
+    padding-top: 200px;
+}
+
+.pb30 {
+    padding-bottom: 30px;
+}
+.pb50 {
+    padding-bottom: 50px;
+}
+
+/* Margin */
+.mt50 {
+    margin-top: 50px;
+}
+.mt100 {
+    margin-top: 100px;
+}
+
+/* Color */
+.c-teal {
+    color: #0A96A6;
+}
