@@ -39,11 +39,13 @@ function check() {
     return (false)
 }
 function sendData(email) {
+    let urlSubs = 'https://dazelpro.com/subscribe';
+    // let urlSubs = 'http://localhost:3030/subscribe';
     let csrfToken = document.getElementById("token").value;
     document.getElementById("btnActive").style.display = "none";
     document.getElementById("btnInActive").style.display = "block";
     (async () => {
-        const rawResponse = await fetch('http://localhost:3030/subscribe', {
+        const rawResponse = await fetch(urlSubs, {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
