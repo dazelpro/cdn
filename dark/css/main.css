@@ -697,14 +697,14 @@ body {
     color: #66b2b2;
 }
 
-.blog-content p {
+.blog-content p, ul {
     margin: 1.5rem 0;
     font-size: 1.20rem;
     font-weight: 400;
     line-height: 2rem;
 }
 @media (max-width: 400px) {
-    .blog-content p {
+    .blog-content p, ul {
         font-size: 1rem;
     }
 }
@@ -717,6 +717,9 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+.blog-content ul {
+    list-style-type: square;
 }
 
 @media (max-width: 992px){
@@ -742,6 +745,101 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+}
+.share-sticky {
+    display: block;
+    float: left;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 35%;
+    margin-top: 12rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 1600px) {
+    .share-sticky {
+        left: 18%; 
+    }
+}
+@media (min-width: 1500px) {
+    .share-sticky {
+        left: 15%; 
+    }
+}
+@media (min-width: 1400px) {
+    .share-sticky {
+        left: 12%; 
+    }
+}
+@media (min-width: 1300px) {
+    .share-sticky {
+        left: 8%; 
+    }
+}
+@media (min-width: 1200px) {
+    .share-sticky {
+        left: 5%; 
+    }
+}
+@media (min-width: 1100px) {
+    .share-sticky {
+        left: 11%; 
+    }
+}
+@media (min-width: 993px) {
+    .share-sticky {
+        left: 6%; 
+    }
+}
+@media (max-width:992px) and (min-width:990px) {
+    .share-sticky {
+        left: 1%; 
+    }
+}
+@media (max-width:989px) and (min-width:850px) {
+    .share-sticky {
+        left: 8%; 
+    }
+}
+@media (max-width:849px) and (min-width:800px) {
+    .share-sticky {
+        left: 5%; 
+    }
+}
+@media (max-width:799px){
+    .share-sticky {
+        display: none;
+    }
+}
+.share svg path {
+    transition: color .15s ease-in-out,fill .15s ease-in-out;
+}
+.share:hover svg path{
+    fill:#17cbdf;
+}
+.share-sticky a {
+    display: block;
+    margin-bottom: 15px;
+}
+.tag-cloud {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.tag-cloud a {
+    color: white;
+    background-color: #013440;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 5px;
+    line-height: 40px;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out;
+}
+.tag-cloud a:hover {
+    color: white;
+    background-color: #0a96a6;
 }
 
 .gradien-wall {
