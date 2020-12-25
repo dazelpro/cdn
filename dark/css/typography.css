@@ -65,6 +65,9 @@
 }
 
 /* Margin */
+.mt25 {
+    margin-top: 25px;
+}
 .mt50 {
     margin-top: 50px;
 }

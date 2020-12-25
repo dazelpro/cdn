@@ -8,6 +8,11 @@
     text-decoration: none;
     cursor: pointer;
 }
+@media (max-width: 290px){
+    .btn {
+        padding: 1rem 1rem;
+    }
+}
 
 .btn-primary {
     background: transparent;
