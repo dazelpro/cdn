@@ -88,6 +88,16 @@ body {
         height: 5em;
     }
 }
+.install-pwa {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem;
+    background-color: rgb(37, 37, 37);
+    border-radius: 10px;
+    box-shadow: 0 2px 0 0 rgba(0,0,0,0.2);
+}
 .intro {
     min-height: 500px;
 }
@@ -220,7 +230,7 @@ body {
 }
 
 .sidenav a {
-    padding: 8px 8px 10px 32px;
+    padding: 8px 32px 10px 32px;
     text-decoration: none;
     font-weight: 500;
     font-size: 20px;
@@ -235,7 +245,7 @@ body {
 .sidenav .closebtn {
     position: absolute;
     top: 1rem;
-    right: 25px;
+    right: 0px;
     margin-top: 2px;
     margin-left: 50px;
 }

@@ -1,11 +1,62 @@
+var docBody = document.getElementById('top');
 var modal = document.getElementById('modal-search');
 var btn = document.getElementById("find-btn");
+var buttonInstallDes = document.getElementById("install-btn-des");
+var buttonInstallMob = document.getElementById("install-btn-mob");
 var btnMob = document.getElementById("find-btn-mobile");
 var span = document.getElementsByClassName("close")[0];
 
 window.onload = function(){ 
     document.getElementById("loading").style.display = "none";
 }
+
+var deferredPrompt;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    showInstallPromotion();
+});
+
+buttonInstallDes.addEventListener('click', (e) => {
+    hideMyInstallPromotion();
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.then((choiceResult) => {
+        if (choiceResult.outcome === 'accepted') {
+            console.log('User accepted the install prompt');
+        } else {
+            console.log('User dismissed the install prompt');
+        }
+    });
+});
+
+buttonInstallMob.addEventListener('click', (e) => {
+    hideMyInstallPromotion();
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.then((choiceResult) => {
+        if (choiceResult.outcome === 'accepted') {
+            console.log('User accepted the install prompt');
+        } else {
+            console.log('User dismissed the install prompt');
+        }
+    });
+});
+
+window.addEventListener('appinstalled', (evt) => {
+    console.log('INSTALL: Success');
+});
+
+function showInstallPromotion() {
+    document.getElementById("install-pwa-mob").style.display = "block";
+    if (window.innerWidth >= 771) {
+        document.getElementById("install-pwa-des").style.display = "block";
+    }
+}
+function hideMyInstallPromotion() {
+    document.getElementById("install-pwa-mob").style.display = "none";
+    document.getElementById("install-pwa-des").style.display = "none";
+}
+
 
 btn.onclick = function() {
     modal.classList.add('show');
