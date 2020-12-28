@@ -18,29 +18,33 @@ window.addEventListener('beforeinstallprompt', (e) => {
     showInstallPromotion();
 });
 
-buttonInstallDes.addEventListener('click', (e) => {
-    hideMyInstallPromotion();
-    deferredPrompt.prompt();
-    deferredPrompt.userChoice.then((choiceResult) => {
-        if (choiceResult.outcome === 'accepted') {
-            console.log('User accepted the install prompt');
-        } else {
-            console.log('User dismissed the install prompt');
-        }
+if (buttonInstallDes) {
+    buttonInstallDes.addEventListener('click', (e) => {
+        hideMyInstallPromotion();
+        deferredPrompt.prompt();
+        deferredPrompt.userChoice.then((choiceResult) => {
+            if (choiceResult.outcome === 'accepted') {
+                console.log('User accepted the install prompt');
+            } else {
+                console.log('User dismissed the install prompt');
+            }
+        });
     });
-});
+}
 
-buttonInstallMob.addEventListener('click', (e) => {
-    hideMyInstallPromotion();
-    deferredPrompt.prompt();
-    deferredPrompt.userChoice.then((choiceResult) => {
-        if (choiceResult.outcome === 'accepted') {
-            console.log('User accepted the install prompt');
-        } else {
-            console.log('User dismissed the install prompt');
-        }
+if (buttonInstallDes) {
+    buttonInstallMob.addEventListener('click', (e) => {
+        hideMyInstallPromotion();
+        deferredPrompt.prompt();
+        deferredPrompt.userChoice.then((choiceResult) => {
+            if (choiceResult.outcome === 'accepted') {
+                console.log('User accepted the install prompt');
+            } else {
+                console.log('User dismissed the install prompt');
+            }
+        });
     });
-});
+}
 
 window.addEventListener('appinstalled', (evt) => {
     console.log('INSTALL: Success');
