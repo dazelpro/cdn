@@ -4,8 +4,8 @@ function GetThumbnail() {
     let getRules = JSON.parse(localStorage.getItem("rules"));
 
     let urlIG = document.getElementById("urlig").value;
-    // let rootDomain = `https://dazelpro.com/`
-    let rootDomain = `http://localhost:3030/`
+    let rootDomain = `https://dazelpro.com/`
+    // let rootDomain = `http://localhost:3030/`
     let urlApi = `${rootDomain}get-thumbnail`
     let rootUrlImage = `${rootDomain}api/v1/instagram/oembed/`
     let urlImage = '';
