@@ -5,6 +5,7 @@ var buttonInstallDes = document.getElementById("install-btn-des");
 var buttonInstallMob = document.getElementById("install-btn-mob");
 var btnMob = document.getElementById("find-btn-mobile");
 var span = document.getElementsByClassName("close")[0];
+let emailInput = document.getElementById("email");
 
 window.onload = function(){ 
     document.getElementById("loading").style.display = "none";
@@ -70,6 +71,11 @@ btnMob.onclick = function() {
     modal.classList.add('show');
 }
 
+emailInput.onclick = function() {
+    document.getElementById("hint-error-input-email").style.display = "none";
+    document.getElementById("email").style.border = "0";
+}
+
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.classList.remove('show');
@@ -85,12 +91,16 @@ function closeNav() {
 }
 
 function check() {
+    let hint = document.getElementById("hint-error-input-email");
+    let emailInput = document.getElementById("email");
     let email = document.getElementById("email").value;
     if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)) {
         sendData(email)
         return (true)
     }
-    alert("You have entered an invalid email address!")
+    hint.style.display = "block";
+    emailInput.style.border = "1px solid red";
+    // alert("You have entered an invalid email address!")
     return (false)
 }
 function sendData(email) {

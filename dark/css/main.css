@@ -420,6 +420,10 @@ body {
 #btnInActive, #newsletterInActive {
     display: none;
 }
+#hint-error-input-email {
+    display: none;
+    margin-top: 10px;
+}
 @keyframes spinner {
     to {transform: rotate(360deg);}
 }
