@@ -5,7 +5,7 @@ var buttonInstallDes = document.getElementById("install-btn-des");
 var buttonInstallMob = document.getElementById("install-btn-mob");
 var btnMob = document.getElementById("find-btn-mobile");
 var span = document.getElementsByClassName("close")[0];
-let emailInput = document.getElementById("email");
+let emailInput = document.getElementById("email") || '';
 
 window.onload = function(){ 
     document.getElementById("loading").style.display = "none";
